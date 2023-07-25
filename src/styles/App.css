@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+/* NAV BAR */
+.nav-name {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 1rem;
+  color: #fff;
+}
+.nav-icon {
+  margin: 0 0.5rem;
+  padding: 0;
+}
+.green-highlight {
+  color: #A9DC76;
+}
+.red-highlight {
+  color: #FF6188;
+}
+.yellow-highlight {
+  color: #FFD866;
+}
+@media (max-width: 576px) {
+  .hide-on-sm {
+    display: none;
+  }
+}
+
+/* Project Card */
+.c-clr {
+  background-color: #e0e0e0;
+}
+.a-clr {
+  background-color: #63e6be;
+}
+.p-card {
+  border-radius: 2rem;
+  transition: border-radius 0.3s ease-in-out;
+  margin: 0.5rem;
+  height: 44vh;
+  overflow: hidden;
+}
+.p-card:hover {
+  border-radius: 0;
+}
+.project-info h3 {
+  font-weight: 600;
+}
+.logo-btn {
+  background: none;
+  border-radius: 5rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.logo-icon {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  opacity: 0.8;
+}
+.logo-icon:hover {
+  opacity: 1;
+}
+.logo-link {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+.card-bg {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.zoom {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    background-size: cover;
+    transform-origin: center;
+    transition: transform .4s ease-in-out;
+  }
+}
+.zoom {
+  &:focus,
+  &:hover {
+    &::after {
+      transform: scale(1.05);
+    }
+  }
+}
+.title {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+.logo-js {
+  color: #f7df1e;
+}
+.logo-react {
+  color: #61dafb;
+}
+.logo-node {
+  color: #68a063;
+}
+.logo-html {
+  color: #e34c26;
+}
+.logo-css {
+  color: #264de4;
+}
+.logo-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: .5rem;
+  padding: .4rem;
+}
+
+/* About Card */
